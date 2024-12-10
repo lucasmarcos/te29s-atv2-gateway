@@ -1,5 +1,3 @@
 package br.edu.utfpr.servico1.dto;
 
-public class DisciplinaDTO {
-
-}
+public record DisciplinaDTO (Long id, Integer cargaHoraria, Boolean obrigatoria) {}
