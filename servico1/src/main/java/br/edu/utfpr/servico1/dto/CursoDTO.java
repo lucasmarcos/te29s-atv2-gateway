@@ -1,5 +1,3 @@
 package br.edu.utfpr.servico1.dto;
 
-public class CursoDTO {
-
-}
+public record CursoDTO (Long id, String nome, Integer cargaHoraria) {}
