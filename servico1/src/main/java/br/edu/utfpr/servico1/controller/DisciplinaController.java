@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/disciplina")
+@RequestMapping("/disciplinas")
 public class DisciplinaController {
     @GetMapping
     public ResponseEntity<List<DisciplinaDTO>> getDisciplina() {
