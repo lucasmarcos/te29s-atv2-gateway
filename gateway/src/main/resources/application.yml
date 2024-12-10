@@ -5,12 +5,15 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: api-cursos
+        - id: cursos
           uri: http://localhost:8081
           predicates:
             - Path=/cursos/**
+        - id: disciplinas
+          uri: http://localhost:8081
+          predicates:
             - Path=/disciplinas/**
-        - id: api-alunos
+        - id: alunos
           uri: http://localhost:8082
           predicates:
             - Path=/alunos/**
